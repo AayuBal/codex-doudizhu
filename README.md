@@ -2,7 +2,7 @@
 
 在独立的 Codex 窗口中游玩本地单机斗地主。应用只向侧边栏增加一个“斗地主”入口，不包含任务面板、任务数据库、CLI、Skill 或云端服务。
 
-![Codex 斗地主实际运行画面](./docs/images/codex-doudizhu-gameplay.jpg?raw=1)
+![Codex 斗地主实际运行画面](https://github.com/AayuBal/codex-doudizhu/releases/download/v1.0.0/Codex-Doudizhu-gameplay.jpg)
 
 ## 功能
 
@@ -74,7 +74,7 @@ src-tauri/target/universal-apple-darwin/release/bundle/dmg/
 
 ## 工作方式
 
-![运行架构](./docs/images/architecture.svg?raw=1)
+![运行架构](https://github.com/AayuBal/codex-doudizhu/releases/download/v1.0.0/Codex-Doudizhu-architecture.svg)
 
 - Tauri 菜单栏应用负责启动和停止 Node launcher。
 - launcher 使用独立 profile 启动官方 Codex，并通过 CDP 注入单一侧边栏入口。
