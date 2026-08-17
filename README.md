@@ -25,7 +25,7 @@
 
 ### 从 DMG 安装
 
-1. 在仓库的 **Releases** 页面下载 `Codex-斗地主-1.0.0-universal.dmg`。
+1. 在仓库的 **Releases** 页面下载 `Codex-Doudizhu-1.0.0-universal.dmg`。
 2. 打开 DMG，将 `Codex 斗地主.app` 拖入“应用程序”文件夹。
 3. 双击 `Codex 斗地主.app`。应用会启动独立的 Codex 窗口，并自动进入牌桌。
 
