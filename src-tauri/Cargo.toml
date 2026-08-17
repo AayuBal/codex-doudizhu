@@ -1,0 +1,13 @@
+[package]
+name = "codex-doudizhu-launcher"
+version = "1.0.0"
+description = "Codex 斗地主 macOS launcher"
+edition = "2021"
+rust-version = "1.88"
+
+[build-dependencies]
+tauri-build = { version = "2.6.0", features = [] }
+
+[dependencies]
+libc = "0.2"
+tauri = { version = "2.11.5", features = ["tray-icon"] }

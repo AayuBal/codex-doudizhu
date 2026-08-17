@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Codex 斗地主",
+  "version": "1.0.0",
+  "identifier": "com.chuspeeism.codex-doudizhu",
+  "app": { "windows": [] },
+  "bundle": {
+    "active": true,
+    "targets": ["app", "dmg"],
+    "category": "Game",
+    "shortDescription": "在 Codex 中游玩单机斗地主",
+    "createUpdaterArtifacts": false,
+    "externalBin": ["binaries/node"],
+    "resources": { "resources/": "" },
+    "icon": ["icons/icon.png", "icons/icon.icns"],
+    "macOS": {
+      "minimumSystemVersion": "14.0",
+      "hardenedRuntime": true,
+      "entitlements": "Entitlements.plist"
+    }
+  }
+}

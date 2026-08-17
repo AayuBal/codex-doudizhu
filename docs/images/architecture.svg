@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Codex 斗地主运行架构</title>
+  <desc id="desc">macOS 启动器通过 CDP 启动独立 Codex，注入斗地主侧边栏，并从本地服务加载离线 Cocos 游戏。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0b3b2d"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0L10 5L0 10Z" fill="#86efac"/>
+    </marker>
+    <style>
+      .box { fill:#172033; stroke:#4ade80; stroke-width:2; rx:18; }
+      .title { fill:#f8fafc; font:700 21px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      .sub { fill:#cbd5e1; font:15px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+      .line { stroke:#86efac; stroke-width:3; fill:none; marker-end:url(#arrow); }
+      .label { fill:#bbf7d0; font:14px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    </style>
+  </defs>
+  <rect width="1200" height="430" rx="28" fill="url(#bg)"/>
+  <text x="54" y="55" class="title" font-size="28">全部在本机完成，无斗地主云端服务</text>
+
+  <rect class="box" x="50" y="115" width="205" height="120"/>
+  <text class="title" x="152" y="158" text-anchor="middle">Codex 斗地主.app</text>
+  <text class="sub" x="152" y="191" text-anchor="middle">Tauri 托盘启动器</text>
+  <text class="sub" x="152" y="216" text-anchor="middle">独立数据与日志目录</text>
+
+  <path class="line" d="M255 175H342"/>
+  <text class="label" x="298" y="158" text-anchor="middle">启动</text>
+
+  <rect class="box" x="350" y="100" width="225" height="150"/>
+  <text class="title" x="462" y="145" text-anchor="middle">Node + CDP</text>
+  <text class="sub" x="462" y="180" text-anchor="middle">随机 loopback 端口</text>
+  <text class="sub" x="462" y="205" text-anchor="middle">脚本注入与生命周期</text>
+  <text class="sub" x="462" y="230" text-anchor="middle">仅绑定 127.0.0.1</text>
+
+  <path class="line" d="M575 175H662"/>
+  <text class="label" x="618" y="158" text-anchor="middle">注入</text>
+
+  <rect class="box" x="670" y="100" width="225" height="150"/>
+  <text class="title" x="782" y="145" text-anchor="middle">独立 Codex 窗口</text>
+  <text class="sub" x="782" y="180" text-anchor="middle">侧边栏“斗地主”入口</text>
+  <text class="sub" x="782" y="205" text-anchor="middle">blob 面板 + nonce 握手</text>
+  <text class="sub" x="782" y="230" text-anchor="middle">切换时暂停 / 恢复</text>
+
+  <path class="line" d="M895 175H982"/>
+  <text class="label" x="938" y="158" text-anchor="middle">加载</text>
+
+  <rect class="box" x="990" y="115" width="160" height="120"/>
+  <text class="title" x="1070" y="158" text-anchor="middle">Cocos 斗地主</text>
+  <text class="sub" x="1070" y="191" text-anchor="middle">游客 + 默认房间</text>
+  <text class="sub" x="1070" y="216" text-anchor="middle">离线 AI 对局</text>
+
+  <path class="line" d="M462 250V324H782V258"/>
+  <rect x="455" y="315" width="334" height="72" rx="16" fill="#0f2b24" stroke="#34d399" stroke-width="2"/>
+  <text class="title" x="622" y="346" text-anchor="middle">随机令牌静态资源路径</text>
+  <text class="sub" x="622" y="372" text-anchor="middle">JS / PNG / MP3 / OGG / FNT / PLIST</text>
+</svg>
