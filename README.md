@@ -5,7 +5,7 @@
 > [!IMPORTANT]
 > 本项目仅供个人本机使用。内置游戏来自一个未声明许可证的上游仓库，请勿公开发布、转售或团队分发。
 
-![Codex 斗地主实际运行画面](docs/images/codex-doudizhu-gameplay.jpg)
+![Codex 斗地主实际运行画面](./docs/images/codex-doudizhu-gameplay.jpg?raw=1)
 
 ## 功能
 
@@ -77,7 +77,7 @@ src-tauri/target/universal-apple-darwin/release/bundle/dmg/
 
 ## 工作方式
 
-![运行架构](docs/images/architecture.svg)
+![运行架构](./docs/images/architecture.svg?raw=1)
 
 - Tauri 菜单栏应用负责启动和停止 Node launcher。
 - launcher 使用独立 profile 启动官方 Codex，并通过 CDP 注入单一侧边栏入口。
